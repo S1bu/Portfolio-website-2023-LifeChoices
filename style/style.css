@@ -8,6 +8,9 @@
  ---main-text-color:white;
  ---alternative-bg-color:#343434;
 }
+section{
+    margin-top: 20px;
+}
 
 /* navigation */
 nav{
@@ -29,44 +32,82 @@ nav .nav-links a{
     color: var(---main-text-color);
     font-weight: 700;
 }
-.underline{
-    border-bottom: 4px solid white;
+nav .nav-links a:hover{
+    color: var(---alternative-bg-color);
+}
+nav .nav-links .underline{
+    color: var(---alternative-bg-color);
 }
 /* *********** */
 
 /* Landing section */
+/* projects */
+.project-container {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+}
+#projects .button{
+    background-color: var(---main-bg-color);
+    color: var(---main-text-color);
+    color: var(---main-text-color);
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+#projects .button:hover{
+    color: var(---alternative-bg-color);
+    background-color: var(---main-text-color);
 
+}
+#projects  i{
+    font-weight: 900;
+}
 
+#projects .card{
+    background-color: var(---alternative-bg-color);
+    color: var(---main-text-color);
+}
+/* Testimonials */
+#testimonials .testimonials-container{
+    display: flex;
+    flex-direction: row;
+}
 
+#testimonials .testimonials-container .card{
+    margin: 2px;
+}
 
+#testimonials .card .card-img-top{
+    border: #343434 1px solid;
+    border-radius: 10px;
 
-
+}
+ 
 
 
 
 /* Contact page */
-#contact{
-    
-}
-/* *********** */
+
 #contact .container-fluid{
     margin: 2px;
 }
- #contact .container-fluid form{
+ #contact .container-fluid .form-container form{
     border: 1px solid black;
     border-radius: 5px;
     background-color: var(---alternative-bg-color);
     color: var(---main-text-color);
     font-weight: 700;
     padding: 40px;
-    margin: 0px 40px;
+    margin: 0px 30px;
  }
- #contact .container-fluid form input{
-    width: 500px;
+ #contact .container-fluid .form-container form input{
+    width: 450px;
     float: right;
     margin-bottom: 4px;
  }
- #contact .container-fluid form button{
+ #contact .container-fluid .form-container form button{
     background-color: var(---main-bg-color);
     margin-top: 10px;
     padding: 5px 50px;
@@ -74,23 +115,28 @@ nav .nav-links a{
     color: var(---main-text-color);
     font-weight: 600;
  }
- #contact .container-fluid form .text{
-    margin-left:80px ;
-    float: right;
+ #contact .container-fluid .form-container form button:hover{
+    background-color: var(---main-text-color);
+   border: 1px solid white;
+   color: var(---alternative-bg-color);
  }
- #contact .container-fluid form .text-last{
-    margin-left: 60px;
+ #contact .container-fluid .form-container form textarea{
+    width: 450px;
  }
- #contact .container-fluid form textarea{
-    width: 500px;
+  
+ .contact-highlight{
+    font-weight: 800;
+    color: var(---main-bg-color);
  }
- #contact .container-fluid .textareatext-area{
-    margin-left: 60px;
+ #contact .container-fluid p{
+    text-align: left;
  }
-/* Footer sectioin */
+ /* *********** */
+/******************Footer sectioin******************/
 footer{
     height: 100px;
     background-color: var(---main-bg-color);
+   
 }
 
 footer .copy-right{
@@ -107,4 +153,4 @@ footer i {
     padding-top: 40px;
 }
 
-/*******************/
+/****************************************88**/
