@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+ ---main-bg-color: #559B7E;
+ ---main-text-color:white;
+ ---alternative-bg-color:#343434;
+}
+
+/* navigation */
+nav{
+    height: 60px;
+   background-color: var(---main-bg-color);
+}
+nav .logo{
+    float: left;
+    padding: 10px;
+    font-weight: 800;
+    color:var(---main-text-color);
+}
+nav .nav-links a{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    padding:10px 20px 0 10px ;
+    text-decoration: none;
+    color: var(---main-text-color);
+    font-weight: 700;
+}
+.underline{
+    border-bottom: 4px solid white;
+}
+/* *********** */
+
+/* Landing section */
+
+
+
+
+
+
+
+
+
+/* Contact page */
+#contact{
+    
+}
+/* *********** */
+#contact .container-fluid{
+    margin: 2px;
+}
+ #contact .container-fluid form{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: var(---alternative-bg-color);
+    color: var(---main-text-color);
+    font-weight: 700;
+    padding: 40px;
+    margin: 0px 40px;
+ }
+ #contact .container-fluid form input{
+    width: 500px;
+    float: right;
+    margin-bottom: 4px;
+ }
+ #contact .container-fluid form button{
+    background-color: var(---main-bg-color);
+    margin-top: 10px;
+    padding: 5px 50px;
+    border: 1px solid #559B7E ;
+    color: var(---main-text-color);
+    font-weight: 600;
+ }
+ #contact .container-fluid form .text{
+    margin-left:80px ;
+    float: right;
+ }
+ #contact .container-fluid form .text-last{
+    margin-left: 60px;
+ }
+ #contact .container-fluid form textarea{
+    width: 500px;
+ }
+ #contact .container-fluid .textareatext-area{
+    margin-left: 60px;
+ }
+/* Footer sectioin */
+footer{
+    height: 100px;
+    background-color: var(---main-bg-color);
+}
+
+footer .copy-right{
+    float: right;
+    padding: 30px;
+    font-weight: 800;
+    color: var(---main-text-color);
+
+}
+ 
+footer i {
+    color: var(---main-text-color);
+    font-size: larger;
+    padding-top: 40px;
+}
+
+/*******************/
