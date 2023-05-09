@@ -16,6 +16,11 @@ section{
 nav{
     height: 60px;
    background-color: var(---main-bg-color);
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 9000;
 }
 nav .logo{
     float: left;
@@ -41,6 +46,51 @@ nav .nav-links .underline{
 /* *********** */
 
 /* Landing section */
+#landing{
+    background-color: var(---alternative-bg-color);
+    color: var(---main-text-color);
+    margin-top: 60px;
+    padding: 30px 0;
+}
+#landing .highlight{
+    color: var(---main-bg-color);
+    font-weight: 800;
+}
+
+#landing .container-fluid .col img{
+    width: 300px;
+    border-radius: 30% 70% 34% 66% / 68% 30% 70% 32% ;
+}
+
+.stack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#landing h1 {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation:slideInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+  #landing a{
+    background-color: var(---main-bg-color);
+    color: var(---main-text-color);
+    font-weight: 700;
+    width: 300px;
+    text-decoration: none;
+     margin-top: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #landing a:hover{
+    background-color: var(---main-text-color);
+    color: var(---alternative-bg-color);
+  }
+/* --------------- */
 /* projects */
 .project-container {
     display: flex;
@@ -64,7 +114,9 @@ nav .nav-links .underline{
 #projects  i{
     font-weight: 900;
 }
-
+#projects h1{
+    margin-top: 20px;
+}
 #projects .card{
     background-color: var(---alternative-bg-color);
     color: var(---main-text-color);
@@ -73,6 +125,7 @@ nav .nav-links .underline{
 #testimonials .testimonials-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 #testimonials .testimonials-container .card{
@@ -94,7 +147,6 @@ nav .nav-links .underline{
     margin: 2px;
 }
  #contact .container-fluid .form-container form{
-    border: 1px solid black;
     border-radius: 5px;
     background-color: var(---alternative-bg-color);
     color: var(---main-text-color);
