@@ -81,16 +81,28 @@ nav .nav-links .underline{
     width: 300px;
     text-decoration: none;
      margin-top: 12px;
+     margin-left:auto;
     padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+     float: right;
   }
   #landing a:hover{
     background-color: var(---main-text-color);
     color: var(---alternative-bg-color);
   }
 /* --------------- */
+/* About */
+#about .container-fluid .col h3{
+font-weight: 700;
+text-align: center;
+}
+#about .container-fluid .col p{
+    text-align: left;
+}
+
+#about .container-fluid .col img{
+    width: 40%;
+}
+
 /* projects */
 .project-container {
     display: flex;
