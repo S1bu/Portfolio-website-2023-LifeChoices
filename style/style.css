@@ -52,6 +52,7 @@ nav .nav-links .underline{
     margin-top: 60px;
     padding: 30px 0;
     height: 500px;
+    width: 100%;
 }
 #landing .highlight{
     color: var(---main-bg-color);
@@ -159,7 +160,7 @@ text-align: center;
 /************************* projects****************************** */
 .project-container {
     display: flex;
-    flex: row;
+    flex-direction: row;
     justify-content: space-between;
 }
 #projects .button{
@@ -271,4 +272,50 @@ footer i {
 }
 
 /******************************************/
-/* ***********media query  */
+/************media query*******/
+@media only screen and (max-width: 700px){
+
+}
+
+@media only screen and (max-width: 400px){
+ /* ***navigation bar* section* */
+    nav .nav-links a{
+        justify-content: center;
+    }
+/******landing section******/
+    #landing{
+        width:100%;
+    }
+    #landing .container-fluid .col img{
+        width: 200px;
+        border-radius: 30% 70% 34% 66% / 68% 30% 70% 32% ;
+        background-image: url("../images/graph.png");
+    }
+/****** projects*************/
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#projects .card{
+   margin-top: 3px;
+   margin-left: 10%;
+}
+/* ********Testimonials*****/
+#testimonials .testimonials-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#testimonials .testimonials-container .card{
+    margin: 3px;
+    margin-left: 10%;
+}
+/*******contact*******/
+#contact .container-fluid .form-container form input{
+    width: 220px;
+ }
+#contact .container-fluid .form-container form textarea{
+    width: 220px;
+ }
+}
