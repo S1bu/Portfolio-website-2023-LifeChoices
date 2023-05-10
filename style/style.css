@@ -153,15 +153,21 @@ text-align: center;
     color: var(---main-bg-color);
  }
  /* skills */
- #about .container-fluid .row .col .skill-1 h5{
+ #about .container-fluid .row .col .skill-1 p{
     color: var(---main-bg-color);
-    font-weight: 900;
+   font-weight: 900;
  }
 /************************* projects****************************** */
 .project-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.project-container .card {
+    width: 300px;
+}
+.project-container .card img{
+    width: 100%;
 }
 #projects .button{
     background-color: var(---main-bg-color);
@@ -195,6 +201,7 @@ text-align: center;
 
 #testimonials .testimonials-container .card{
     margin: 2px;
+    width: 300px;
 }
 
 #testimonials .card .card-img-top{
@@ -211,6 +218,7 @@ text-align: center;
 #contact .container-fluid{
     margin: 2px;
 }
+ 
  #contact .container-fluid .form-container form{
     border-radius: 5px;
     background-color: var(---alternative-bg-color);
@@ -267,20 +275,17 @@ footer .copy-right{
  
 footer i {
     color: var(---main-text-color);
-    font-size: larger;
+    font-size: 40px;
     padding-top: 40px;
+    padding: 10px;
 }
 
 /******************************************/
 /************media query*******/
-@media only screen and (max-width: 700px){
 
-}
-
+/* Regular smart phone */
 @media only screen and (max-width: 650px){
  /* ***navigation bar* section* */
-  
-
     nav .nav-links a{
         float: right;
         display: flex;
@@ -310,18 +315,19 @@ footer i {
 }
 #projects .card{
    margin-top: 3px;
-   margin-left: 20%;
-   margin-left: 20%;
+   margin: 2% 10%;
+   width: auto;
+   text-align: center;
 }
 /* ********Testimonials*****/
 #testimonials .testimonials-container{
     flex-direction: column;
 }
 #testimonials .testimonials-container .card{
-    margin: 3px;
-    margin-left: 20%;
-    margin-left: 20%;
-    width: 100%;
+        margin-top: 3px;
+        margin: 2% 10%;
+        width: auto;
+ 
 }
 /*******contact*******/
 #contact .container-fluid .form-container form input{
@@ -340,4 +346,46 @@ footer i {
     color: var(---main-text-color);
 
 }
+}
+
+/* Tiny smart phone */
+@media only screen and (max-width: 400px){
+    /* navigation bar section */
+    nav .logo{
+       font-size: 10px;
+    }
+    nav .nav-links a{
+        font-size: 10px;
+    }
+    /* landing page section */
+#landing{
+    height: 400px;
+}
+
+/* About secton */
+#about .container-fluid .col h3{
+    font-weight: 900;
+    text-align: center;
+    }
+    #about .container-fluid .col p{
+        text-align: left;
+        text-align: center;
+    }
+    
+    #about .container-fluid .col img{
+        align-items: center;
+    }
+    #about h3{
+        text-align: center;
+    }
+
+    #about .container-fluid .row .col .skill-1 {
+        justify-content: center;
+     }
+     #about .container-fluid .row .col .work h5{
+        text-align: center;
+     }
+     #about .container-fluid .row .col .work img {
+      visibility: hidden;
+     }
 }
