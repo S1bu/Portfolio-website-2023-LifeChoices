@@ -277,7 +277,7 @@ footer i {
 
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 650px){
  /* ***navigation bar* section* */
   
 
@@ -333,7 +333,7 @@ footer i {
  /******footer***********/
  footer .copy-right{
     float: right;
-      font-size: 30px;
+      font-size: 20px;
       padding: 0;
       text-align: center;
     font-weight: 800;
