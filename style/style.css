@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-:root{
+:root{ 
  ---main-bg-color: #559b7e;
  ---main-text-color:white;
  ---alternative-bg-color:#343434;
@@ -12,7 +12,7 @@ section{
     margin-top: 20px;
 }
 
-/* navigation */
+/* *************************navigation **************************/
 nav{
     height: 60px;
    background-color: var(---main-bg-color);
@@ -43,9 +43,9 @@ nav .nav-links a:hover{
 nav .nav-links .underline{
     color: var(---alternative-bg-color);
 }
-/* *********** */
+/* ************************************************************* */
 
-/* Landing section */
+/* ***************************Landing section **************************/
 #landing{
     background-color: var(---alternative-bg-color);
     color: var(---main-text-color);
@@ -76,7 +76,7 @@ div ~p{
     display: inline-block;
     margin: 0 0.5rem;
     animation:slideInRight; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
+    animation-duration: 5s; /* don't forget to set a duration! */
   }
   #landing a{
     background-color: var(---main-bg-color);
@@ -85,7 +85,7 @@ div ~p{
     width: 300px;
     text-decoration: none;
      margin-top: 12px;
-     margin-left:auto;
+     margin-right:auto;
     padding: 10px;
      float: right;
   }
@@ -93,11 +93,13 @@ div ~p{
     background-color: var(---main-text-color);
     color: var(---alternative-bg-color);
   }
-/* --------------- */
-/* About */
+
+ 
+/* -----------**************************************************---- */
+/* ******************************About************************* */
 
 #about .container-fluid .col h3{
-font-weight: 700;
+font-weight: 900;
 text-align: center;
 }
 #about .container-fluid .col p{
@@ -110,7 +112,7 @@ text-align: center;
  .black-star i{
     color: var(---alternative-bg-color);
  }
-#about .container-fluid .col .skill-1 {
+#about .container-fluid .row .col .skill-1 {
    display: flex;
    flex-direction: row;
 }
@@ -120,7 +122,41 @@ text-align: center;
 #about .container-fluid .col .skill-1 .black-star i{
     color: var(---alternative-bg-color);
 }
-/* projects */
+.bio-stuff{
+    color: var(---main-bg-color);
+  }
+  /* BIO */
+  .bio-highlight{
+    font-weight: 900;
+    color: var(---main-bg-color);
+  }
+  /* education */
+  .education-hight{
+    font-weight: 900;
+    color: var(---main-bg-color);
+  }
+  /* work column */
+  #about .container-fluid .row .col .work {
+    display: flex;
+    flex-direction: column;
+ }
+ #about .container-fluid .row .col .work h5{
+     font-weight: 600;
+ }
+ #about .container-fluid .row .col .work img{
+    width: 50px;
+    height: 50px;
+ }
+ .work-highlight{
+    font-weight: 900;
+    color: var(---main-bg-color);
+ }
+ /* skills */
+ #about .container-fluid .row .col .skill-1 h5{
+    color: var(---main-bg-color);
+    font-weight: 900;
+ }
+/************************* projects****************************** */
 .project-container {
     display: flex;
     flex: row;
@@ -128,7 +164,6 @@ text-align: center;
 }
 #projects .button{
     background-color: var(---main-bg-color);
-    color: var(---main-text-color);
     color: var(---main-text-color);
     font-weight: 600;
     text-align: center;
@@ -150,7 +185,7 @@ text-align: center;
     background-color: var(---alternative-bg-color);
     color: var(---main-text-color);
 }
-/* Testimonials */
+/* *************************Testimonials************************* */
 #testimonials .testimonials-container{
     display: flex;
     flex-direction: row;
@@ -168,9 +203,9 @@ text-align: center;
 }
  
 
+/* ************************************************** */
 
-
-/* Contact page */
+/* *************************Contact page **************************/
 
 #contact .container-fluid{
     margin: 2px;
@@ -212,9 +247,10 @@ text-align: center;
  #contact .container-fluid p{
     text-align: left;
  }
- /* *********** */
+ /* ************************************************************* */
 /******************Footer sectioin******************/
 footer{
+    width: 100%;
     height: 100px;
     background-color: var(---main-bg-color);
    
@@ -234,4 +270,5 @@ footer i {
     padding-top: 40px;
 }
 
-/****************************************88**/
+/******************************************/
+/* ***********media query  */
