@@ -20,48 +20,36 @@
 </head>
 <body> 
     <header>
-        <!-- navigation bar -->
-        <!-- <nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
             <div class="logo">
               Sibusiso.
             </div>
-            <div class="nav-links">
-                <a href="#contact">Contact</a>
-                <a href="#testimonials">Testimonials</a>
-                <a href="#projects">Projects</a>
-                <a href="#about">About</a>
-               <a href="#landing" class="underline">Home</a> 
-            </div>
-        </nav> -->
-        <!------------------->
-        <nav class="navbar navbar-expand-lg ">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Sibusiso.</a>
-            <!-- button that appears when screen is small -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <!------------------------------------------------>
-            <!--List of anchors-->
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link " href="#landing">Home</a>
+                  <a class="nav-link links" href="#landing"><span class="links">Home</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link" href="#about""><span class="links">About</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link"href="#projects">Projects</a>
+                  <a class="nav-link" href="#projects"><span class="links">Projects</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#testimonials">Testimonials</a>
+                  <a class="nav-link" href="#testimonials"><span class="links">Testimonials</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact"><span class="links">Contact</span></a>
                 </li>
               </ul>
             </div>
-            <!-------------- -->
           </div>
         </nav>
+        
     </header>
     <main>
         <!-- landing section -->
@@ -480,33 +468,34 @@
                     <p class="text-center"><span class="contact-highlight">Whatsapp :</span>0609479185</p>
                   </div>
                   <div class="col">
-                    <!-- contact form -->
-                    <div class="form-container">
-                      <form action="https://formspree.io/f/mpzebbdr"method="POST"> 
-                        <center><H1>Message me</H1></center>
-                        <label>
-                            <input type="name" name="name" class="text" placeholder="Name: John">
-                        </label>
-                           <br>
-                           <label>
-                             <input type="surname" name="surname"class="text" placeholder="Surname: Baptist">
-                           </label>
-                           <br>
-                        <label>
-                        <input type="email" name="email" class="text" placeholder="John_Baptist@gmail.com">
-                        </label>
-                        <br>
-                        <!--  -->
-                        <label>
-                          <textarea name="message" placeholder="Message"></textarea>
-                        </label>
-                        <!--  -->
-                        <br>
-                         <!-- your other form fields go here -->
-                            <button type="submit">Send</button>
-                    </form>
-                    </div>
                     
+                    <form action="https://formspree.io/f/mpzebbdr"method="POST">
+                      <center><h1>Message me</h1></center>
+                         <!--Name-->
+                    <div class="mb-3">
+                      <!-- <label for="exampleFormControlInput1" class="form-label">Name</label> -->
+                      <input type="name" name="name" class="form-control" id="exampleFormControlInput1" placeholder="name">
+                    </div>
+                    <!--surname-->
+                    <div class="mb-3">
+                      <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                      <input type="surname"  name="surname" class="form-control" id="exampleFormControlInput1" placeholder="surname">
+                    </div>
+                    <!--email-->
+                    <div class="mb-3">
+                      <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                      <input type="email"  name="email" class="form-control" id="exampleFormControlInput1" placeholder="email@gmail.com">
+                    </div>
+                    <!--message -->
+                    <div class="mb-3">
+                      <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+                      <textarea class="form-control"  name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Meassage"></textarea>
+                    </div>  
+                    <!--submit button-->
+                     <!-- your other form fields go here -->
+                       <button type="submit">Send</button>
+                    </form>
+                     
                   </div>
                 </div>
               </div>
@@ -532,30 +521,6 @@
      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous">
     </script>
+    <!--------------------------->
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- <!-- <div class="col">
-  
-</div> -->

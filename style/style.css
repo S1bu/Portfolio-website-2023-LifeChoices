@@ -13,9 +13,11 @@ section{
 }
 body{
     border: 20px solid black;
+    /* width: min-content; */
 }
 /* *************************navigation **************************/
-nav{
+/* entire nav container */
+.navbar .container-fluid {
     height: 60px;
    background-color: var(---main-bg-color);
    position: fixed;
@@ -24,38 +26,26 @@ nav{
    width: 100%;
    z-index: 9000;
 }
-nav .logo{
-    float: left;
+/* nav logo */
+.navbar .logo{
     padding: 10px;
     font-weight: 800;
     color:var(---main-text-color);
 }
-nav .nav-links a{
-    float: right;
-    display: flex;
-    flex-direction: row;
-    padding:10px 20px 0 10px ;
-    text-decoration: none;
+.links{
     color: var(---main-text-color);
     font-weight: 700;
 }
-nav .nav-links a:hover{
-    color: var(---alternative-bg-color);
-}
-nav .nav-links .underline{
+.links:hover{
     color: var(---alternative-bg-color);
 }
 
-.navbar .collapse{
-    float: right;
-}
 /* ************************************************************* */
 
 /* ***************************Landing section **************************/
 #landing{
     background-color: var(---alternative-bg-color);
     color: var(---main-text-color);
-    margin-top: 60px;
     padding: 30px 0;
     height: 500px;
     width: 100%;
@@ -218,7 +208,7 @@ text-align: center;
     margin: 2px;
 }
  
- #contact .container-fluid .form-container form{
+ #contact .container-fluid form{
     border-radius: 5px;
     background-color: var(---alternative-bg-color);
     color: var(---main-text-color);
@@ -226,12 +216,8 @@ text-align: center;
     padding: 40px;
     margin: 0px 30px;
  }
- #contact .container-fluid .form-container form input{
-    width: 450px;
-    float: right;
-    margin-bottom: 4px;
- }
- #contact .container-fluid .form-container form button{
+
+ #contact .container-fluid  form button{
     background-color: var(---main-bg-color);
     margin-top: 10px;
     padding: 5px 50px;
@@ -239,15 +225,12 @@ text-align: center;
     color: var(---main-text-color);
     font-weight: 600;
  }
- #contact .container-fluid .form-container form button:hover{
+ #contact .container-fluid  form button:hover{
     background-color: var(---main-text-color);
    border: 1px solid white;
    color: var(---alternative-bg-color);
  }
- #contact .container-fluid .form-container form textarea{
-    width: 450px;
- }
-  
+ 
  .contact-highlight{
     font-weight: 800;
     color: var(---main-bg-color);
@@ -278,52 +261,25 @@ footer i {
     padding-top: 40px;
     padding: 10px;
 }
-
-/******************************************/
-/************media query*******/
+/*************************************************************/
+/*************************************************************/
+/*******************************media query**************************/
+/*************************************************************/
+/*************************************************************/
+/*************************************************************/
 /* Tablet*/
-@media only screen and (max-width: 800px){
-    /* about columns */
-    #about .container-fluid .col .bio{
-        width: 400px;
-    }
-    /* Testimonial cards */
-    #testimonials .testimonials-container {
-        flex-direction:column ;
-    }
-    #testimonials .testimonials-container .card{
-        width: auto;
-        justify-content:flex-start;
-        margin: 2% 10%;
-    }
-    .project-container {
-        flex-direction: column;
-    }
-    #projects .card{
-       margin-top: 3px;
-       margin: 2% 10%;
-       width: auto;
-       text-align: center;
-    }
 
-    }
 /**********************************************/
 /**********************************************/
 /**********************************************/
 /* Regular smart phone */
 @media only screen and (max-width: 700px){
- /* ***navigation bar* section* */
-    nav .nav-links a{
-        float: right;
+
+    #about .container-fluid .row{
         display: flex;
-        flex-direction: row;
-        padding:10px 10px 0 10px ;
-        text-decoration: none;
-        color: var(---main-text-color);
-        font-weight: 700;
-        font-size: 12px;
-        justify-content: center;
+        flex-direction: column;
     }
+    
 /******landing section******/
     #landing{
         width:100%;
@@ -356,13 +312,6 @@ footer i {
         width: auto;
  
 }
-/*******contact*******/
-#contact .container-fluid .form-container form input{
-    width: 220px;
- }
-#contact .container-fluid .form-container form textarea{
-    width: 220px;
- }
  /******footer***********/
  footer .copy-right{
     float: right;
@@ -373,7 +322,16 @@ footer i {
     color: var(---main-text-color);
 
 }
+.collapse{
+    background-color: var(---alternative-bg-color);
+    border-radius: 5px;
+    margin-top: 10px;
 }
+#contact .container-fluid form{
+    margin: 0 ;
+}
+}
+ 
 
 /* Tiny smart phone */
 
@@ -381,10 +339,17 @@ footer i {
 /**********************************************/
 /**********************************************/
 @media only screen and (max-width: 300px){
-/* ***navigation bar* section* */
-nav .nav-links a{
-    font-size: 10px;
-}
+    body{
+            border: 20px solid black;
+            width: min-content;
+    }
+    #about .container-fluid {
+        display: flex;
+        flex-direction: column;
+    }
+    #about .container-fluid .col .bio{
+       width: 100%;
+    }
 /******landing section******/
 #landing{
     /* width:fit-content; */
@@ -415,14 +380,6 @@ flex-direction: column;
     margin-top: 3px;
     margin: 2% 10%;
     width: auto;
-
-}
-/*******contact*******/
-#contact .container-fluid .form-container form input{
-width: 220px;
-}
-#contact .container-fluid .form-container form textarea{
-width: 220px;
 }
 /******footer***********/
 footer .copy-right{
@@ -433,5 +390,14 @@ float: right;
 font-weight: 800;
 color: var(---main-text-color);
 
+}
+.collapse{
+    background-color: var(---alternative-bg-color);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#contact .container-fluid .row{
+    display: flex;
+    flex-direction: column;
 }
 }
