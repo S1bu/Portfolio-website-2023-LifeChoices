@@ -192,7 +192,7 @@ text-align: center;
     background-color: var(---alternative-bg-color);
     color: var(---main-text-color);
 }
-/* *************************Testimonials************************* */
+/* *************************Testimonials**************************/
 #testimonials .testimonials-container{
     display: flex;
     flex-direction: row;
@@ -206,12 +206,8 @@ text-align: center;
 
 #testimonials .card .card-img-top{
     border: #343434 1px solid;
-    border-radius: 10px;
-
 }
- 
-
-/* ************************************************** */
+/* *************************************************************/
 
 /* *************************Contact page **************************/
 
