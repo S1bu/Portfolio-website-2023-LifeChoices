@@ -21,7 +21,7 @@
 <body> 
     <header>
         <!-- navigation bar -->
-        <nav>
+        <!-- <nav>
             <div class="logo">
               Sibusiso.
             </div>
@@ -32,6 +32,35 @@
                 <a href="#about">About</a>
                <a href="#landing" class="underline">Home</a> 
             </div>
+        </nav> -->
+        <!------------------->
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sibusiso.</a>
+            <!-- button that appears when screen is small -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!------------------------------------------------>
+            <!--List of anchors-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link " href="#landing">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+            <!-------------- -->
+          </div>
         </nav>
     </header>
     <main>
@@ -40,7 +69,9 @@
         <div class="container-fluid text-center">
           <div class="row">
             <div class="col">
-              <img src="./images/me2.jpg" alt="portfolio-pic">
+              <div class="image-of-me">
+                <img src="./images/Sibusiso-Dyan.jpg" alt="portfolio-pic">
+              </div>
             </div>
             <div class="col stack">
       
@@ -73,10 +104,17 @@
               <p><span class="bio-highlight">DOB:</span> 21/04/2000</p>
              </div>
              <div class="bio">
-              <p><span class="bio-highlight">Languages:</span> isixhosa,English,IsiZulu</p>
+              <p><span class="bio-highlight">Languages:</span> 
+                <ul>
+                  <li> isixhosa</li>
+                  <li>English</li>
+                  <li>IsiZulu</li>
+                </ul>
+              </p>
              </div>
              <div class="bio">
-              <p><span class="bio-highlight">Address:</span>South Africa,Cape Town,Goodwood,Pinetree crescent 7460</p>
+              <p><span class="bio-highlight">Address:</span>South Africa, <br> Cape Town,
+                <br> Goodwood,<br> Pinetree crescent 7460</p>
              </div>
              <div class="bio">
               <p><span class="bio-highlight">Hobies:</span>
@@ -213,99 +251,106 @@
 
             </div>
             <div class="col"> <!--skills col-->
-               <h3>Technical Skills</h3>
+               <h3 >Technical Skills</h3>
                 <!-- css -->
-              <div class="skill-1">
+                <div class="skills">
+                  <div class="skill-1">
                
-                <p>HTML : </p>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-              </div>
-               <!-- css -->
-              <div class="skill-1">
-               
-                <p>CSS : </p>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-              </div>
-              <!-- boostrap -->
-                <div class="skill-1">
-                    <p>Bootstrap : </p>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
+                    <p>HTML : </p>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                  </div>
+                   <!-- css -->
+                  <div class="skill-1">
+                   
+                    <p>CSS : </p>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                  </div>
+                  <!-- boostrap -->
+                    <div class="skill-1">
+                        <p>Bootstrap : </p>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                    </div>
+                    <!-- SQL -->
+                      <div class="skill-1">
+                           <p>SQL : </p>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <span class="black-star"><i class="bi bi-star-fill"></i></span> 
+                      </div>
+                      <!-- jAVASCRIPT -->
+                      <div class="skill-1">
+                          <p>Javascript : </p>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <span class="black-star"><i class="bi bi-star-fill"></i></span> 
+                            <span class="black-star"><i class="bi bi-star-fill"></i></span> 
+                      </div>
+                      <!-- VUE.JS -->
+                      <div class="skill-1">
+                            <p> vue.js: </p>
+                                <span class="black-star"> <i class="bi bi-star-fill"></i></span> 
+                                <span class="black-star"> <i class="bi bi-star-fill"></i></span> 
+                                <span class="black-star"><i class="bi bi-star-fill"></i></span> 
+                                <span class="black-star"><i class="bi bi-star-fill"></i></span> 
+                                <span class="black-star"><i class="bi bi-star-fill"></i></span> 
+                      </div>
+                       <!-- UX design -->
+                       <div class="skill-1">
+                        <p>UX design : </p>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                   </div>
+                    <!-- windows office -->
+                    <div class="skill-1">
+                      <p>windows office : </p>
+                         <i class="bi bi-star-fill"></i>
+                         <i class="bi bi-star-fill"></i>
+                         <i class="bi bi-star-fill"></i>
+                         <i class="bi bi-star-fill"></i>
+                         <i class="bi bi-star-fill"></i>
+                 </div>
+                 <hr>
+                      <br>
+                     
+                        <h3>Soft Skills</h3>
+                      <ul>
+                        <li> Problem solving</li>
+                        <li>Team buildin</li>
+                        <li>Team leading</li>
+                        <li>Communication</li>
+                        <li>Listening</li>
+                        <li>Negotiation</li>
+                        <li>Story Telling</li>
+                        <li>Verbal & Visual communicaton</li>
+                        <li>Research skills</li>
+                        <li>Willingness to learn</li>
+                        <li>Troubleshooting skills</li>
+                      </ul>
+                      <hr>
+                      
+                      
                 </div>
-                <!-- SQL -->
-                  <div class="skill-1">
-                       <p>SQL : </p>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <span class="black-star"><i class="bi bi-star-fill"></i></span> 
-                  </div>
-                  <!-- jAVASCRIPT -->
-                  <div class="skill-1">
-                      <p>Javascript : </p>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <span class="black-star"><i class="bi bi-star-fill"></i></span> 
-                        <span class="black-star"><i class="bi bi-star-fill"></i></span> 
-                  </div>
-                  <!-- VUE.JS -->
-                  <div class="skill-1">
-                        <p> vue.js: </p>
-                            <span class="black-star"> <i class="bi bi-star-fill"></i></span> 
-                            <span class="black-star"> <i class="bi bi-star-fill"></i></span> 
-                            <span class="black-star"><i class="bi bi-star-fill"></i></span> 
-                            <span class="black-star"><i class="bi bi-star-fill"></i></span> 
-                            <span class="black-star"><i class="bi bi-star-fill"></i></span> 
-                  </div>
-                   <!-- UX design -->
-                   <div class="skill-1">
-                    <p>UX design : </p>
-                       <i class="bi bi-star-fill"></i>
-                       <i class="bi bi-star-fill"></i>
-                       <i class="bi bi-star-fill"></i>
-                       <i class="bi bi-star-fill"></i>
-                       <i class="bi bi-star-fill"></i>
-               </div>
-                <!-- windows office -->
-                <div class="skill-1">
-                  <p>windows office : </p>
-                     <i class="bi bi-star-fill"></i>
-                     <i class="bi bi-star-fill"></i>
-                     <i class="bi bi-star-fill"></i>
-                     <i class="bi bi-star-fill"></i>
-                     <i class="bi bi-star-fill"></i>
-             </div>
-             <hr>
-                  <br>
-                  <h3>Soft Skills</h3>
-                  <ul>
-                    <li> Problem solving</li>
-                    <li>Team buildin</li>
-                    <li>Team leading</li>
-                    <li>Communication</li>
-                    <li>Listening</li>
-                    <li>Negotiation</li>
-                    <li>Story Telling</li>
-                    <li>Verbal & Visual communicaton</li>
-                    <li>Research skills</li>
-                    <li>Willingness to learn</li>
-                    <li>Troubleshooting skills</li>
-                  </ul>
-                  <hr>
-            </div>
+
+                </div>
+              
             </div>
 
             </div>
@@ -322,7 +367,7 @@
             <div class="card">
               <img src="./images/foodiefanatix.png" class="card-img-top" alt="Foodiefanatix">
               <div class="card-body">
-                <h5 class="card-title">Foodies fanatix</h5>
+                <h5 class="card-title">Foodie fanatix</h5>
                 <p class="card-text">Built using html & css</p>
                 <a href="https://sibusisodyan-itvarsity.github.io/Module-11-Assessment-2-/" target="_blank" class="button">View</a> <!--view the website-->
                 <a href="https://github.com/sibusisodyan-ITvarsity/Module-11-Assessment-2-" target="_blank" class="button"><i class="bi bi-code"></i></a>
@@ -381,7 +426,7 @@
            <div class="card">
             <img src="./images/alonso.jpg" class="card-img-top" alt="alonso" loading="lazy">
             <div class="card-body">
-              <h5 class="card-title text-center">Alonso</h5>
+              <h5 class="card-title text-center">Alonso Cupido</h5>
               <p class="card-text">Sibusiso is a very great person he works well in a team and also works really hard , 
                 and he is always punctual. He has a good understanding of IT and web development, he would be a great
                  asset to your team and a very reliable team member. Any team would be lucky if you were to accept him.</p>
@@ -401,18 +446,24 @@
           </div>
            <!-- card 4 -->
            <div class="card">
-            <img src="./images/me2.jpg" class="card-img-top" alt="..." loading="lazy">
+            <img src="./images/Rabia.jpg" class="card-img-top" alt="Rabia" loading="lazy">
             <div class="card-body">
-              <h5 class="card-title text-center">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title text-center">Rabia Haucha</h5>
+              <p class="card-text">Sibusiso or Sibu as he likes being called is a go-getter ,he is really a gem whether on a personal or work level he is just a great 
+                human being overall.He is also very helpful and is quite intellectually smart .If you dont understand something he
+                 is always willing to explain and make sure you understand .He makes you feel comfortable and his really a joyous
+                  character.He really works hard and is very focused on his goals and work so don't disturb him but honestly a great
+                   guy and really he will make any company go from ZERO to HERO !</p>
             </div>
           </div>
            <!-- card 5 -->
            <div class="card">
-            <img src="./images/me2.jpg" class="card-img-top" alt="..." loading="lazy">
+            <img src="./images/abdul.jpg" class="card-img-top" alt="abdul" loading="lazy">
             <div class="card-body">
-              <h5 class="card-title text-center">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title text-center">Abdul-Azeez Kemp</h5>
+              <p class="card-text">Sibusiso, great guy, focused individual, knows what he wants. His way of thinking
+                 and implementing his thoughts and planning into coding is great. Phenomenal guy, good team player and has a
+                  strong knowledge of coding.</p>
             </div>
           </div>
           </div>

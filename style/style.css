@@ -11,7 +11,9 @@
 section{
     margin-top: 20px;
 }
-
+body{
+    border: 20px solid black;
+}
 /* *************************navigation **************************/
 nav{
     height: 60px;
@@ -43,6 +45,10 @@ nav .nav-links a:hover{
 nav .nav-links .underline{
     color: var(---alternative-bg-color);
 }
+
+.navbar .collapse{
+    float: right;
+}
 /* ************************************************************* */
 
 /* ***************************Landing section **************************/
@@ -62,7 +68,6 @@ nav .nav-links .underline{
 #landing .container-fluid .col img{
     width: 300px;
     border-radius: 30% 70% 34% 66% / 68% 30% 70% 32% ;
-    background-image: url("../images/graph.png");
 }
 
 .stack{
@@ -70,9 +75,7 @@ nav .nav-links .underline{
     flex-direction: column;
     justify-content: center;
 }
-div ~p{
- padding: -70px;
-}
+ 
 #landing h1 {
     display: inline-block;
     margin: 0 0.5rem;
@@ -278,9 +281,37 @@ footer i {
 
 /******************************************/
 /************media query*******/
+/* Tablet*/
+@media only screen and (max-width: 800px){
+    /* about columns */
+    #about .container-fluid .col .bio{
+        width: 400px;
+    }
+    /* Testimonial cards */
+    #testimonials .testimonials-container {
+        flex-direction:column ;
+    }
+    #testimonials .testimonials-container .card{
+        width: auto;
+        justify-content:flex-start;
+        margin: 2% 10%;
+    }
+    .project-container {
+        flex-direction: column;
+    }
+    #projects .card{
+       margin-top: 3px;
+       margin: 2% 10%;
+       width: auto;
+       text-align: center;
+    }
 
+    }
+/**********************************************/
+/**********************************************/
+/**********************************************/
 /* Regular smart phone */
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 700px){
  /* ***navigation bar* section* */
     nav .nav-links a{
         float: right;
@@ -345,43 +376,62 @@ footer i {
 }
 
 /* Tiny smart phone */
-@media only screen and (max-width: 400px){
-    /* navigation bar section */
-    nav .logo{
-       font-size: 10px;
-    }
-    nav .nav-links a{
-        font-size: 10px;
-    }
-    /* landing page section */
-#landing{
-    height: 400px;
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+@media only screen and (max-width: 300px){
+/* ***navigation bar* section* */
+nav .nav-links a{
+    font-size: 10px;
 }
+/******landing section******/
+#landing{
+    /* width:fit-content; */
+    height: 500px;
+}
+#landing .container-fluid .col img{
+    width: 200px;
+}
+#landing h1 {
+    animation:bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+  }
+/****** projects*************/
+.project-container {
+flex-direction: column;
+}
+#projects .card{
+margin-top: 3px;
+margin: 2% 10%;
+width: auto;
+text-align: center;
+}
+/* ********Testimonials*****/
+#testimonials .testimonials-container{
+flex-direction: column;
+}
+#testimonials .testimonials-container .card{
+    margin-top: 3px;
+    margin: 2% 10%;
+    width: auto;
 
-/* About secton */
-#about .container-fluid .col h3{
-    font-weight: 900;
-    text-align: center;
-    }
-    #about .container-fluid .col p{
-        text-align: left;
-        text-align: center;
-    }
-    
-    #about .container-fluid .col img{
-        align-items: center;
-    }
-    #about h3{
-        text-align: center;
-    }
+}
+/*******contact*******/
+#contact .container-fluid .form-container form input{
+width: 220px;
+}
+#contact .container-fluid .form-container form textarea{
+width: 220px;
+}
+/******footer***********/
+footer .copy-right{
+float: right;
+  font-size: 20px;
+  padding: 0;
+  text-align: center;
+font-weight: 800;
+color: var(---main-text-color);
 
-    #about .container-fluid .row .col .skill-1 {
-        justify-content: center;
-     }
-     #about .container-fluid .row .col .work h5{
-        text-align: center;
-     }
-     #about .container-fluid .row .col .work img {
-      visibility: hidden;
-     }
+}
 }
