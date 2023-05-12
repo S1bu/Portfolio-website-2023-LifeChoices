@@ -342,9 +342,15 @@ footer i {
 /**********************************************/
 @media only screen and (max-width: 300px){
     body{
-        padding: 20px;
+       
             /* border: 20px solid black; */
             width: min-content;
+    }
+    p{
+        font-size: larger;
+    }
+    section{
+        padding: 20px;
     }
     #about .container-fluid {
         display: flex;
@@ -356,6 +362,7 @@ footer i {
 /******landing section******/
 #landing{
     /* width:fit-content; */
+    min-width: max-content;
     height: 500px;
 }
 #landing .container-fluid .col img{
@@ -406,5 +413,11 @@ footer i{
 #contact .container-fluid .row{
     display: flex;
     flex-direction: column;
+}
+.contact-highlight{
+    font-size: 18px;
+}
+.contact-detail{
+font-size: 13px;
 }
 }
