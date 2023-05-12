@@ -438,7 +438,7 @@ font-size: 18px;
 }
 #landing .container-fluid .col img{
     width: 300px;
-    
+    }
 #landing h1 {
     font-size: 80px;
     animation:bounce; /* referring directly to the animation's @keyframe declaration */
@@ -491,5 +491,4 @@ footer i{
 }
 .contact-detail{
 font-size: 18px;
-}
 }
